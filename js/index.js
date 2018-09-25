@@ -7,7 +7,7 @@ $(window).scroll(function(e){
 });
 
 $(document).on('click','a',function(event){
-  event.preventDefault();
+  //event.preventDefault();
   var target= $(this).attr("href");
   $('html,body').animate({
     scrollTop: $(target).offset().top

@@ -192,6 +192,9 @@ section#section_service {
 section#section_service hr {
   border-color: rgba(0, 0, 0, 0.7);
 }
+section#section_service .col-sm-12 {
+  height: 100px;
+}
 section#section_service .col-sm-4 {
   text-align: center;
 }
