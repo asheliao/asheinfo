@@ -94,3 +94,8 @@ var vm = new Vue({
     })
   }
 })
+
+// var height = document.body.clientHeigh;
+// var width = document.body.clientWidth;
+// console.log(height)
+// console.log(document.body.clientWidth)

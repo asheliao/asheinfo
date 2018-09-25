@@ -135,7 +135,7 @@ section#section_about .btn-area {
   height: 150px;
 }
 section#section_about #cat {
-  width: 30%;
+  width: 100%;
   max-width: 300px;
   position: absolute;
   right: 0px;
@@ -188,16 +188,16 @@ section#section_about .tri5 {
 
 section#section_service {
   background-color: #ececec;
+  height: 500px;
 }
 section#section_service hr {
   border-color: rgba(0, 0, 0, 0.7);
 }
-section#section_service .col-sm-20 {
-  padding: 30px 0px;
+section#section_service .col-sm-12 {
+  margin-bottom: 70px;
 }
-section#section_service .col-sm-5 {
+section#section_service .col-sm-3 {
   text-align: center;
-  padding-left: 20%;
 }
 section#section_service h3 {
   color: #e6af2e;
