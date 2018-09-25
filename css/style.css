@@ -192,17 +192,18 @@ section#section_service {
 section#section_service hr {
   border-color: rgba(0, 0, 0, 0.7);
 }
-section#section_service .col-sm-12 {
-  height: 100px;
+section#section_service .col-sm-20 {
+  padding: 30px 0px;
 }
-section#section_service .col-sm-4 {
+section#section_service .col-sm-5 {
   text-align: center;
+  padding-left: 20%;
 }
 section#section_service h3 {
   color: #e6af2e;
 }
 section#section_service .icon_service {
-  width: 60%;
+  width: 40%;
 }
 
 section#section_works {
