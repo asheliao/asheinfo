@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>My website fork</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:300,400,700'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<nav class="navbar navbar-default navbar-fixed-top at_top">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#header_index">Ashe Liao</a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#section_about">About</a></li>
+        <li class="active"><a href="#section_service">Resume</a></li>
+        <li><a href="#section_contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.nav-collapse-->
+  </div>
+</nav>
+<header id="header_index">
+  <div class="container"><img class="icon" src="https://i.imgur.com/6iS7OMq.png" alt=""/><img class="marginbottom mountain" src="https://i.imgur.com/HDyYo5d.png" alt=""/>
+    <div class="explore at_top">EXPLORE</div>
+  </div>
+</header>
+<section id="section_about"><img class="marginbottom" src="https://awiclass.monoame.com/img/margin/m_about.svg" alt=""/><img id="cat" src="https://awiclass.monoame.com/catpic/cat_lefttop.png"/>
+  <div id="cross"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-4"><img class="tri tri1" src="https://awiclass.monoame.com/img/webpic/w_tri1.svg" alt=""/>
+        <h2 class="r1text">ABOUT ME</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"><img class="tri tri2" src="https://awiclass.monoame.com/img/webpic/w_tri2.svg" alt=""/></div>
+      <div class="col-sm-8"><img class="tri tri3" src="https://awiclass.monoame.com/img/webpic/w_tri3.svg" alt=""/>
+        <h3 class="r2text">NTU Economics</h3>
+        <h3 class="r2text">Microsoft Taiwan Technology Center Data&AI Team Intern</h3>
+        <h3 class="r2text">Research Assistant @ NTU Behavior and Data Science Research Center</h3>
+        <h3 class="r2text">Teaching Assistant @ NTU ECON 107-1 Data Science and Social Inquiry</h3>
+        <h3 class="r2text">The Best Prestation Award - Inter-Seminar NTU x QU x KU</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <h2 class="r3text">If you torture the data long enough, it will confess. - Ronald Coase</h2>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="col-sm-4 btn-area"><img class="tri tri4" src="https://awiclass.monoame.com/img/webpic/w_tri4.svg" alt=""/></div>
+      <div class="col-sm-4"><img class="tri tri5" src="https://awiclass.monoame.com/img/webpic/w_tri5.svg" alt=""/></div>
+    </div>
+  </div>
+</section>
+<section id="section_service">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Resume & Profile</h1>
+      </div>
+      <div class="col-sm-4"><a href="https://drive.google.com/file/d/1kg_SbUNyz1LMkrypVl-0jp1eKrxUKWdU/view?usp=sharing"> <img class="icon_service" src="https://i.imgur.com/XkMDWJ4.png" alt=""/></a>
+        <h3>Resume</h3>
+      </div>
+      <div class="col-sm-4"><a href="https://github.com/asheliao"><img class="icon_service" src="https://i.imgur.com/stMmKZy.png" alt=""/></a>
+        <h3>Github</h3>
+      </div>
+      <div class="col-sm-4"><a href="https://www.linkedin.com/in/ashe-liao-5b177113b/"><img class="icon_service" src="https://i.imgur.com/NZLz9lr.png" alt=""/></a>
+        <h3>LinkedIn</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_works"><img class="marginbottom mountain" src="https://awiclass.monoame.com/img/margin/m_works.svg"/>
+  <div class="container" id="app">
+    <div class="row" v-if="works.length&gt;0">
+      <div class="col-sm-12">
+        <h1>Works</h1>
+      </div>
+      <div class="col-sm-6 work big"><img :src="works[1].img" alt=""/>
+        <div class="texts">
+          <h4 class="title">{{works[1].name}}</h4>
+          <p class="content" v-html="works[1].content.substr(0,40)"></p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-6 work" v-for="w in works.slice(2,6)"><img :src="w.img" alt=""/>
+          <div class="texts">
+            <h4 class="title">{{w.name}}     </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_contact"><img class="cat" id="cat_blue" src="https://awiclass.monoame.com/catpic/cat_blue_cat.png" alt=""/><img class="cat" id="cat_grey" src="https://awiclass.monoame.com/catpic/cat_yellow_cat.png" alt=""/><img class="cat" id="cat_yellow" src="https://awiclass.monoame.com/catpic/cat_grey_cat.png" alt=""/>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="mails">
+          <div class="mailcover"><img src="https://awiclass.monoame.com/img/webpic/w_mail_cover.svg" alt=""/></div>
+          <div class="mailbody">
+            <h5>Dear Yellow Studio</h5>
+            <label>Name</label>
+            <input type="text"/>
+            <label>Email</label>
+            <input type="text"/>
+            <label>Content</label>
+            <textarea></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h2>CONTACT</h2><br/>
+        <p>If you have any question about us,<br>Don`t hestitate to contact us !</p><br/><br/>
+        <p>YELLOWSTUDIO@gmail.com<br>ADDRESS: TAIWAN, TAIPEI , XORO Road<br>Phone: 02-12345678</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer"><img class="icon" src="https://awiclass.monoame.com/img/webpic/w_icon_black.svg"/></footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.9/vue.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

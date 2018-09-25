@@ -1,0 +1,349 @@
+@charset "UTF-8";
+* {
+  font-family: "Oswald", "微軟正黑體";
+}
+
+html, body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+header {
+  position: relative;
+  background-color: #ececec;
+  text-align: center;
+}
+header .icon {
+  width: 100%;
+  max-width: 250px;
+  padding: 250px 0px;
+}
+header .marginbottom {
+  position: absolute;
+  width: 105%;
+  bottom: 0px;
+  right: -20px;
+  -webkit-animation: upin 2s both;
+          animation: upin 2s both;
+}
+@-webkit-keyframes upin {
+  0% {
+    bottom: -120px;
+  }
+  100% {
+    bottom: -80px;
+  }
+}
+@keyframes upin {
+  0% {
+    bottom: -120px;
+  }
+  100% {
+    bottom: -80px;
+  }
+}
+@-webkit-keyframes upsidedown {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 72%;
+  }
+}
+@keyframes upsidedown {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 72%;
+  }
+}
+header .explore {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #111;
+  top: 70%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-animation: upsidedown 1s infinite alternate;
+          animation: upsidedown 1s infinite alternate;
+}
+header .explore:after {
+  display: block;
+  content: "v";
+  -webkit-transform: scaleX(1.2) scaleY(0.5);
+          transform: scaleX(1.2) scaleY(0.5);
+}
+header .explore.at_top {
+  opacity: 1;
+}
+
+nav.navbar {
+  transition: 0.5s;
+}
+nav.navbar a {
+  transition: 0.5s;
+}
+
+nav.navbar.at_top {
+  background-color: #777;
+}
+nav.navbar.at_top a, nav.navbar.at_top a:visited {
+  color: #fff;
+}
+
+section {
+  padding: 60px 0px;
+  position: relative;
+}
+
+section#section_about {
+  background-color: #f5d061;
+}
+section#section_about .container {
+  -webkit-transform: rotate(15deg) scale(0.9);
+          transform: rotate(15deg) scale(0.9);
+}
+section#section_about .row {
+  height: 150px;
+  color: black;
+}
+section#section_about .row .r1text {
+  font-size: 80px;
+  transition: 0.1s;
+}
+section#section_about .row .r2text {
+  font-size: 35px;
+  transition: 0.2s;
+}
+section#section_about .row .r3text {
+  font-size: 50px;
+  text-align: right;
+  transition: 0.3s;
+}
+section#section_about .marginbottom {
+  position: absolute;
+  width: 60%;
+  top: calc(100% - 2px);
+  z-index: 3;
+}
+section#section_about .btn-area {
+  height: 150px;
+}
+section#section_about #cat {
+  width: 30%;
+  max-width: 300px;
+  position: absolute;
+  right: 0px;
+  bottom: -2px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+section#section_about #cross {
+  position: absolute;
+}
+section#section_about #cross:before, section#section_about #cross:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+section#section_about #cross:after {
+  -webkit-transform: translate(-50%, -50%) rotate(136deg);
+          transform: translate(-50%, -50%) rotate(136deg);
+}
+section#section_about .tri {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+section#section_about .tri1 {
+  width: 350px;
+}
+section#section_about .tri2 {
+  width: 20px;
+  margin-left: 20px;
+}
+section#section_about .tri3 {
+  width: 150px;
+  margin-left: 70%;
+}
+section#section_about .tri4 {
+  width: 70px;
+  margin-left: 100%;
+}
+section#section_about .tri5 {
+  width: 80px;
+  margin-left: 100%;
+}
+
+section#section_service {
+  background-color: #ececec;
+}
+section#section_service hr {
+  border-color: rgba(0, 0, 0, 0.7);
+}
+section#section_service .col-sm-4 {
+  text-align: center;
+}
+section#section_service h3 {
+  color: #e6af2e;
+}
+section#section_service .icon_service {
+  width: 60%;
+}
+
+section#section_works {
+  background-color: #ececec;
+}
+section#section_works .marginbottom {
+  position: absolute;
+  width: 95%;
+  top: 100%;
+  right: -20px;
+  -webkit-animation: upin 2s both;
+          animation: upin 2s both;
+  z-index: 5;
+}
+section#section_works hr {
+  border-color: rgba(0, 0, 0, 0.7);
+}
+section#section_works .work {
+  height: 230px;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+}
+@media screen and (max-width: 700px) {
+  section#section_works .work {
+    height: 460px;
+  }
+}
+section#section_works .work.big {
+  height: 460px;
+}
+section#section_works .work:before {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+  z-index: 5;
+}
+section#section_works .work .texts {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  z-index: 8;
+  opacity: 0;
+  transition: 0.5s;
+}
+section#section_works .work .texts .title {
+  line-height: 24px;
+}
+section#section_works .work:hover:before, section#section_works .work:hover .texts {
+  opacity: 1;
+}
+section#section_works .work img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 700px) {
+  section#section_works .work img {
+    height: auto;
+    width: 110%;
+  }
+}
+
+section#section_contact {
+  background-color: #282f44;
+  color: #ececec;
+  overflow: hidden;
+}
+section#section_contact .cat {
+  width: 150px;
+  position: absolute;
+  bottom: 0px;
+  transition: 0.3s;
+}
+section#section_contact #cat_blue {
+  right: 240px;
+  z-index: 3;
+}
+section#section_contact #cat_grey {
+  right: 100px;
+}
+section#section_contact #cat_yellow {
+  right: 170px;
+}
+section#section_contact .mails {
+  height: 400px;
+}
+section#section_contact .mails .mailbody {
+  background-color: #ececec;
+  color: #282f44;
+  padding: 20px;
+  padding-left: 40px;
+  position: absolute;
+  width: 90%;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+section#section_contact .mails .mailcover {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 70%;
+  -webkit-transform: rotate(5deg) scale(2.1) translate(-50%, -50%);
+          transform: rotate(5deg) scale(2.1) translate(-50%, -50%);
+}
+section#section_contact .mails .mailcover img {
+  width: 120%;
+}
+section#section_contact input, section#section_contact textarea {
+  display: block;
+  background-color: transparent;
+  border: none;
+  border: solid 3px #282f44;
+}
+section#section_contact textarea {
+  height: 140px;
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  background-color: #e6af2e;
+  text-align: center;
+}
+footer .icon {
+  width: 80%;
+  max-width: 250px;
+  padding: 80px 0px;
+}

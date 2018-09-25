@@ -1,0 +1,283 @@
+//顏色定義
+$color_blue: #282f44
+$color_brown: #e6af2e
+$color_yellow: #f5d061
+$color_white: #ececec 
+// ---------------------------
+*
+  font-family: 'Oswald','微軟正黑體'
+  //border: solid 1px black
+  
+// //debug
+// *
+//   border: solid 1px black !important
+// header,section
+//   display: none
+// section#section_contact
+//   display: block
+  
+  
+  
+//---------------------------
+  
+@mixin ab_center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+
+@mixin size($w,$h)
+  width: $w
+  height: $h
+// ---------------------------
+html,body
+  overflow-x: hidden
+  font-size: 16px
+  
+header
+  position: relative
+  background-color: $color_white
+  text-align: center
+  
+  .icon 
+    width: 100%
+    max-width: 250px
+    padding: 250px 0px
+  .marginbottom
+    position: absolute
+    width: 105%
+    bottom: 0px
+    right: -20px
+    animation: upin 2s both
+  @keyframes upin
+    0%
+      bottom: -120px
+    100%
+      bottom: -80px
+  @keyframes upsidedown
+    0%
+      top: 70%
+    100%
+      top: 72%
+  
+  .explore
+    +ab_center
+    font-size: 16px
+    color: #111
+    top: 70%
+    opacity: 0
+    transition: 0.5s
+    animation: upsidedown 1s infinite alternate
+    &:after
+      display: block
+      content: "v"
+      transform: scaleX(1.2) scaleY(0.5)
+    &.at_top
+      opacity: 1
+      
+// ---------------------------
+nav.navbar
+  transition: 0.5s
+  a
+    transition: 0.5s
+nav.navbar.at_top
+  background-color: #777
+  a , a:visited
+    color: #fff
+// ---------------------------
+section
+  padding: 60px 0px
+  position: relative
+
+// ---------------------------
+section#section_about
+  background-color: $color_yellow
+  
+  .container
+    transform: rotate(15deg) scale(0.9)
+  
+  .row
+    height: 150px
+    color: black
+    
+    .r1text
+      font-size: 80px
+      transition: 0.1s
+    .r2text
+      font-size: 35px
+      transition: 0.2s
+    .r3text
+      font-size: 50px
+      text-align: right
+      transition: 0.3s
+      
+  .marginbottom
+    position: absolute
+    width: 60%
+    top: calc(100% - 2px)
+    z-index: 3
+      
+  .btn-area
+    height: 150px
+  
+  #cat
+    width: 30%
+    max-width: 300px
+    position: absolute
+    right: 0px
+    bottom: -2px
+    transform: translateX(-50%)
+  #cross
+    position: absolute
+    &:before,&:after
+      content: ""
+      display: block
+      width: 60px
+      height: 15px
+      background-color: #fff
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%) rotate(45deg)
+    &:after
+      transform: translate(-50%,-50%) rotate(136deg)
+
+  .tri
+    transform: rotate(-15deg)
+  .tri1
+    width: 350px
+  .tri2
+    width: 20px
+    margin-left: 20px
+  .tri3
+    width: 150px
+    margin-left: 70%
+  .tri4
+    width: 70px
+    margin-left: 100%
+  .tri5
+    width: 80px
+    margin-left: 100%
+    
+// ---------------------------
+section#section_service
+  background-color: $color_white
+  hr
+    border-color: rgba(black,0.7)
+  .col-sm-4
+    text-align: center
+  h3
+    color: $color_brown
+  .icon_service
+    width: 60%
+    
+// ---------------------------
+section#section_works
+  background-color: $color_white
+  
+  .marginbottom
+    position: absolute
+    width: 95%
+    top: 100%
+    right: -20px
+    animation: upin 2s both
+    z-index: 5
+  
+  hr
+    border-color: rgba(black,0.7)
+  .work
+    height: 230px
+    cursor: pointer
+    position: relative
+    padding: 5px
+    overflow: hidden
+    @media screen and (max-width: 700px)
+      height: 460px
+    &.big
+      height: 460px
+      
+    &:before
+      content: ""
+      display: block
+      opacity: 0
+      +ab_center
+      +size(100%,100%)
+      background-color: rgba(black,0.7)
+      transition: 0.5s
+      z-index: 5
+    
+    .texts
+      +ab_center
+      color: white
+      z-index: 8
+      opacity: 0
+      transition: 0.5s
+      
+      .title
+        line-height: 24px
+      
+    &:hover
+      &:before,.texts
+        opacity: 1
+      
+  .work img
+    height: 100%
+    +ab_center
+    @media screen and (max-width: 700px)
+      height: auto
+      width: 110%
+
+section#section_contact
+  background-color: $color_blue
+  color: $color_white
+  overflow: hidden
+  .cat
+    width: 150px
+    position: absolute
+    bottom: 0px
+    transition: 0.3s
+  #cat_blue
+    right: 240px
+    z-index: 3
+  #cat_grey
+    right: 100px
+  #cat_yellow
+    right: 170px
+    
+  .mails
+    height: 400px
+    .mailbody
+      background-color: $color_white
+      color: $color_blue
+      padding: 20px
+      padding-left: 40px
+      position: absolute
+      width: 90%
+      transform: translateX(-30px)
+    
+    .mailcover
+      +ab_center
+      top: 70%
+      transform: rotate(5deg) scale(2.1)       translate(-50%,-50%)
+      img
+        width: 120%
+        
+  input,textarea
+    display: block
+    background-color: transparent
+    border: none
+    border: solid 3px $color_blue
+  textarea
+    height: 140px
+    width: 100%
+    
+// ---------------------------
+footer
+  position: relative
+  background-color: $color_brown
+  text-align: center
+  
+  .icon
+    width: 80%
+    max-width: 250px
+    padding: 80px 0px
