@@ -188,13 +188,12 @@ section#section_about .tri5 {
 
 section#section_service {
   background-color: #ececec;
-  height: 500px;
 }
 section#section_service hr {
   border-color: rgba(0, 0, 0, 0.7);
 }
 section#section_service .col-sm-12 {
-  margin-bottom: 70px;
+  padding-bottom: 30px;
 }
 section#section_service .col-sm-3 {
   text-align: center;
@@ -205,9 +204,18 @@ section#section_service h3 {
 section#section_service .icon_service {
   width: 40%;
 }
+section#section_service .marginbottom1 {
+  position: absolute;
+  width: 40%;
+  bottom: -2px;
+  right: -2px;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  z-index: 3;
+}
 
 section#section_works {
-  background-color: #ececec;
+  background-color: #f5d061;
 }
 section#section_works .marginbottom {
   position: absolute;
