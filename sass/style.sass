@@ -6,7 +6,7 @@ $color_white: #ececec
 // ---------------------------
 *
   font-family: 'Oswald','微軟正黑體'
-  //border: solid 1px black
+  // border: solid 1px black
   
 // //debug
 // *
@@ -29,17 +29,31 @@ $color_white: #ececec
 @mixin size($w,$h)
   width: $w
   height: $h
+@mixin abpos($l:initial,$t:initial)
+  position: absolute
+  left: $l
+  top: $t
 // ---------------------------
 html,body
   overflow-x: hidden
   font-size: 16px
-  margin: 0px
-  padding: 0px
+  margin: 0 px
+  padding: 0 px
+  
   
 header
   position: relative
   background-color: $color_white
   text-align: center
+  // background: radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%)
+  // overflow: hidden
+  .allstars
+  //外層容器撐滿整個框框
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  
   
   .icon 
     width: 100%
@@ -51,11 +65,41 @@ header
     bottom: 0px
     right: -20px
     animation: upin 2s both
-  @keyframes upin
+
+  
+  //星星從原本位置偏移落下的動畫，從右上到左下
+  @keyframes falling
+    0%,100%
+      opacity: 0
+    70%
+      opacity: 1
     0%
-      bottom: -120px
+      transform: translate(100px,0px)
     100%
-      bottom: -80px
+      transform: translate(0px,200px)
+
+  //以star開頭的為星星
+  [class^='stars']
+    width: 3px
+    height: 3px
+    border-radius: 100%
+    background-color: #111
+    animation: falling 2s infinite
+    
+  //產生30顆星星不同的偏移位置跟動畫delay
+  @for $i from 1 through 40
+    .stars#{$i}
+      $posX: random(100)*1%
+      $posY: random(80)*-1% + 50%
+      +abpos($posX, $posY)
+      left: random(100)*1%
+      top: random(80)*-1% + 50%
+      animation-delay: $i*-0.1s
+  // @keyframes upin
+  //   0%
+  //     bottom: -120px
+  //   100%
+  //     bottom: -80px
   @keyframes upsidedown
     0%
       top: 70%
@@ -93,10 +137,10 @@ section
 
 // ---------------------------
 section#section_about
-  background-color: $color_brown
+  background-color: $color_yellow
   
-  .container
-    transform: rotate(15deg) scale(0.9)
+  // .container
+  //   transform: rotate(10deg) scale(0.9)
   
   .row
     height: 150px
@@ -105,13 +149,17 @@ section#section_about
     .r1text
       font-size: 80px
       transition: 0.1s
+      margin-top: 80px
     .r2text
+      margin: 25px 0px
       font-size: 35px
       transition: 0.2s
+
     .r3text
       font-size: 50px
       text-align: right
       transition: 0.3s
+      margin: 25px 0px
       
   .marginbottom
     position: absolute
@@ -164,13 +212,12 @@ section#section_about
 // ---------------------------
 section#section_service
   background-color: $color_white
-  
-  hr
-    border-color: rgba(black,0.7)
+
   .col-sm-12
     padding-bottom: 30px
   .col-sm-3
     text-align: center
+    padding-top: 20px
   
   h3
     color: $color_brown
@@ -188,8 +235,7 @@ section#section_service
 section#section_service1
   background-color: $color_white
   
-  hr
-    border-color: rgba(black,0.7)
+  
   .col-sm-12
     padding-bottom: 30px
   .col-sm-3
