@@ -6,7 +6,7 @@ $color_white: #ececec
 // ---------------------------
 *
   font-family: 'Oswald','微軟正黑體'
-  //border: solid 1px black
+  // border: solid 1px black
   
 // //debug
 // *
@@ -29,15 +29,43 @@ $color_white: #ececec
 @mixin size($w,$h)
   width: $w
   height: $h
+@mixin abpos($l:initial,$t:initial)
+  position: absolute
+  left: $l
+  top: $t
 // ---------------------------
 html,body
   overflow-x: hidden
   font-size: 16px
+  margin: 0 px
+  padding: 0 px
+  
   
 header
   position: relative
   background-color: $color_white
   text-align: center
+<<<<<<< HEAD
+  background-image: url(https://i.imgur.com/EUa8gCC.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100%
+  
+  
+  
+  
+  
+=======
+>>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
+  // background: radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%)
+  // overflow: hidden
+  .allstars
+  //外層容器撐滿整個框框
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  
   
   .icon 
     width: 100%
@@ -49,11 +77,55 @@ header
     bottom: 0px
     right: -20px
     animation: upin 2s both
-  @keyframes upin
+
+  
+  //星星從原本位置偏移落下的動畫，從右上到左下
+  @keyframes falling
+    0%,100%
+      opacity: 0
+    70%
+      opacity: 1
     0%
-      bottom: -120px
+      transform: translate(100px,0px)
     100%
-      bottom: -80px
+      transform: translate(0px,200px)
+
+  //以star開頭的為星星
+  [class^='stars']
+<<<<<<< HEAD
+    width: 4px
+    height: 4px
+=======
+    width: 3px
+    height: 3px
+>>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
+    border-radius: 100%
+    background-color: #111
+    animation: falling 2s infinite
+    
+  //產生30顆星星不同的偏移位置跟動畫delay
+<<<<<<< HEAD
+  @for $i from 1 through 50
+=======
+  @for $i from 1 through 40
+>>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
+    .stars#{$i}
+      $posX: random(100)*1%
+      $posY: random(80)*-1% + 50%
+      +abpos($posX, $posY)
+<<<<<<< HEAD
+      // left: random(100)*1%
+      // top: random(150)*1%
+=======
+      left: random(100)*1%
+      top: random(80)*-1% + 50%
+>>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
+      animation-delay: $i*-0.1s
+  // @keyframes upin
+  //   0%
+  //     bottom: -120px
+  //   100%
+  //     bottom: -80px
   @keyframes upsidedown
     0%
       top: 70%
@@ -93,8 +165,8 @@ section
 section#section_about
   background-color: $color_yellow
   
-  .container
-    transform: rotate(15deg) scale(0.9)
+  // .container
+  //   transform: rotate(10deg) scale(0.9)
   
   .row
     height: 150px
@@ -103,13 +175,17 @@ section#section_about
     .r1text
       font-size: 80px
       transition: 0.1s
+      margin-top: 80px
     .r2text
+      margin: 25px 0px
       font-size: 35px
       transition: 0.2s
+
     .r3text
       font-size: 50px
       text-align: right
       transition: 0.3s
+      margin: 25px 0px
       
   .marginbottom
     position: absolute
@@ -121,7 +197,7 @@ section#section_about
     height: 150px
   
   #cat
-    width: 30%
+    width: 100%
     max-width: 300px
     position: absolute
     right: 0px
@@ -162,20 +238,79 @@ section#section_about
 // ---------------------------
 section#section_service
   background-color: $color_white
-  hr
-    border-color: rgba(black,0.7)
+
   .col-sm-12
-    height: 100px
-  .col-sm-4
+    padding-bottom: 30px
+  .col-sm-3
     text-align: center
+    padding-top: 20px
+  
   h3
     color: $color_brown
-  .icon_service
-    width: 60%
     
+  .icon_service
+    width: 40%
+  .marginbottom1
+    position: absolute
+    width: 40%
+    bottom: -2px
+    right: -2px
+    transform: scaleY(-1)
+    z-index: 3
+// -----------------------
+section#section_service1
+  background-color: $color_white
+  
+  
+  .col-sm-12
+    padding-bottom: 30px
+  .col-sm-3
+    text-align: center
+    padding-right: 0px
+    
+  .text
+<<<<<<< HEAD
+    
+    //text-align: left
+    padding-left: 0px
+    padding-top: 20px
+  ul
+    list-style-position: outside
+  
+  h3
+    color: $color_brown
+  h2
+    color: #333
+    font-size: 16px
+    
+=======
+    
+    //text-align: left
+    padding-left: 0px
+    padding-top: 20px
+  ul
+    list-style-position: outside
+  
+  h3
+    color: $color_brown
+  h2
+    color: #333
+    font-size: 16px
+    
+>>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
+    
+  .icon_service
+    width: 40%
+  .marginbottom1
+    position: absolute
+    width: 40%
+    bottom: -2px
+    right: -2px
+    transform: scaleY(-1)
+    z-index: 3
 // ---------------------------
 section#section_works
-  background-color: $color_white
+  background-color: $color_yellow
   
   .marginbottom
     position: absolute
@@ -184,6 +319,8 @@ section#section_works
     right: -20px
     animation: upin 2s both
     z-index: 5
+  .bigimg
+    transform: scaleX(0.5) scaleY(0.5)
   
   hr
     border-color: rgba(black,0.7)
@@ -197,6 +334,15 @@ section#section_works
       height: 460px
     &.big
       height: 460px
+      
+      // &.left
+      //   border-top: 3px solid $color_blue
+      //   border-bottom: 3px solid $color_blue
+      //   border-left: 3px solid $color_blue
+      // &.right
+      //   border: 3px solid $color_blue
+        
+        
       
     &:before
       content: ""
