@@ -45,10 +45,6 @@ header
   position: relative
   background-color: $color_white
   text-align: center
-  background-image: url(https://i.imgur.com/EUa8gCC.jpg)
-  background-repeat: no-repeat
-  background-size: cover
-  height: 100%
   
   
   
@@ -116,10 +112,13 @@ header
       top: 72%
   
   .explore
-    +ab_center
+    position: absolute
+    left: 50%
+    top: 80%
     font-size: 16px
     color: #111
-    top: 70%
+    transform: translate(-50%)
+    
     opacity: 0
     transition: 0.5s
     animation: upsidedown 1s infinite alternate
@@ -302,12 +301,7 @@ section#section_works
     &.big
       height: 460px
       
-      // &.left
-      //   border-top: 3px solid $color_blue
-      //   border-bottom: 3px solid $color_blue
-      //   border-left: 3px solid $color_blue
-      // &.right
-      //   border: 3px solid $color_blue
+      
         
         
       
@@ -332,15 +326,21 @@ section#section_works
         line-height: 24px
       
     &:hover
-      &:before,.texts
+      &:before, .texts
         opacity: 1
       
   .work img
-    height: 100%
     +ab_center
     @media screen and (max-width: 700px)
-      height: auto
-      width: 110%
+    height: auto
+    width: auto
+    z-index: 3
+    opacity: 1
+    transition: 0.5s
+    
+    
+    
+      
 
 section#section_contact
   background-color: $color_blue
@@ -359,32 +359,12 @@ section#section_contact
   #cat_yellow
     right: 170px
     
-  .mails
-    height: 400px
-    .mailbody
-      background-color: $color_white
-      color: $color_blue
-      padding: 20px
-      padding-left: 40px
-      position: absolute
-      width: 90%
-      transform: translateX(-30px)
-    
-    .mailcover
-      +ab_center
-      top: 70%
-      transform: rotate(5deg) scale(2.1)       translate(-50%,-50%)
-      img
-        width: 120%
-        
-  input,textarea
-    display: block
-    background-color: transparent
-    border: none
-    border: solid 3px $color_blue
-  textarea
-    height: 140px
-    width: 100%
+  .col-sm-12
+    width: auto
+    height: 200px
+  .text
+    font-size: 25px
+  
     
 // ---------------------------
 footer
