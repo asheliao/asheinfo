@@ -6,7 +6,7 @@ $color_white: #ececec
 // ---------------------------
 *
   font-family: 'Oswald','微軟正黑體'
-  // border: solid 1px black
+  //border: solid 1px black
   
 // //debug
 // *
@@ -45,8 +45,6 @@ header
   position: relative
   background-color: $color_white
   text-align: center
-<<<<<<< HEAD
-<<<<<<< HEAD
   background-image: url(https://i.imgur.com/EUa8gCC.jpg)
   background-repeat: no-repeat
   background-size: cover
@@ -56,10 +54,6 @@ header
   
   
   
-=======
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
-=======
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
   // background: radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%)
   // overflow: hidden
   .allstars
@@ -95,48 +89,20 @@ header
 
   //以star開頭的為星星
   [class^='stars']
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 4px
     height: 4px
-=======
-    width: 3px
-    height: 3px
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
-=======
-    width: 3px
-    height: 3px
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
     border-radius: 100%
     background-color: #111
     animation: falling 2s infinite
     
   //產生30顆星星不同的偏移位置跟動畫delay
-<<<<<<< HEAD
-<<<<<<< HEAD
   @for $i from 1 through 50
-=======
-  @for $i from 1 through 40
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
-=======
-  @for $i from 1 through 40
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
     .stars#{$i}
       $posX: random(100)*1%
       $posY: random(80)*-1% + 50%
       +abpos($posX, $posY)
-<<<<<<< HEAD
-<<<<<<< HEAD
       // left: random(100)*1%
       // top: random(150)*1%
-=======
-      left: random(100)*1%
-      top: random(80)*-1% + 50%
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
-=======
-      left: random(100)*1%
-      top: random(80)*-1% + 50%
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
       animation-delay: $i*-0.1s
   // @keyframes upin
   //   0%
@@ -286,38 +252,6 @@ section#section_service1
     padding-right: 0px
     
   .text
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    //text-align: left
-    padding-left: 0px
-    padding-top: 20px
-  ul
-    list-style-position: outside
-  
-  h3
-    color: $color_brown
-  h2
-    color: #333
-    font-size: 16px
-    
-=======
-    
-    //text-align: left
-    padding-left: 0px
-    padding-top: 20px
-  ul
-    list-style-position: outside
-  
-  h3
-    color: $color_brown
-  h2
-    color: #333
-    font-size: 16px
-    
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
-    
-=======
     
     //text-align: left
     padding-left: 0px
@@ -332,7 +266,6 @@ section#section_service1
     font-size: 16px
     
     
->>>>>>> f99c1186e7e69e9a94138f4a7950adbd37c387c2
   .icon_service
     width: 40%
   .marginbottom1
@@ -344,7 +277,7 @@ section#section_service1
     z-index: 3
 // ---------------------------
 section#section_works
-  background-color: $color_yellow
+  background-color: $color_white
   
   .marginbottom
     position: absolute
