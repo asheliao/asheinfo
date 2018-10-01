@@ -74,351 +74,351 @@ header [class^='stars'] {
 }
 header .stars1 {
   position: absolute;
-  left: 30%;
-  top: 35%;
+  left: 13%;
+  top: -13%;
   -webkit-animation-delay: -0.1s;
           animation-delay: -0.1s;
 }
 header .stars2 {
   position: absolute;
-  left: 73%;
-  top: 26%;
+  left: 34%;
+  top: 3%;
   -webkit-animation-delay: -0.2s;
           animation-delay: -0.2s;
 }
 header .stars3 {
   position: absolute;
-  left: 80%;
-  top: -16%;
+  left: 64%;
+  top: -4%;
   -webkit-animation-delay: -0.3s;
           animation-delay: -0.3s;
 }
 header .stars4 {
   position: absolute;
-  left: 65%;
-  top: -2%;
+  left: 26%;
+  top: -11%;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
 }
 header .stars5 {
   position: absolute;
-  left: 52%;
-  top: 43%;
+  left: 8%;
+  top: 26%;
   -webkit-animation-delay: -0.5s;
           animation-delay: -0.5s;
 }
 header .stars6 {
   position: absolute;
-  left: 25%;
-  top: 17%;
+  left: 52%;
+  top: -11%;
   -webkit-animation-delay: -0.6s;
           animation-delay: -0.6s;
 }
 header .stars7 {
   position: absolute;
-  left: 32%;
-  top: -5%;
+  left: 64%;
+  top: 18%;
   -webkit-animation-delay: -0.7s;
           animation-delay: -0.7s;
 }
 header .stars8 {
   position: absolute;
-  left: 67%;
-  top: 8%;
+  left: 10%;
+  top: 39%;
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
 }
 header .stars9 {
   position: absolute;
-  left: 82%;
-  top: 29%;
+  left: 12%;
+  top: -16%;
   -webkit-animation-delay: -0.9s;
           animation-delay: -0.9s;
 }
 header .stars10 {
   position: absolute;
-  left: 4%;
-  top: -27%;
+  left: 40%;
+  top: 36%;
   -webkit-animation-delay: -1s;
           animation-delay: -1s;
 }
 header .stars11 {
   position: absolute;
-  left: 95%;
-  top: -14%;
+  left: 35%;
+  top: 0%;
   -webkit-animation-delay: -1.1s;
           animation-delay: -1.1s;
 }
 header .stars12 {
   position: absolute;
-  left: 77%;
-  top: 17%;
+  left: 70%;
+  top: -2%;
   -webkit-animation-delay: -1.2s;
           animation-delay: -1.2s;
 }
 header .stars13 {
   position: absolute;
-  left: 37%;
-  top: 35%;
+  left: 42%;
+  top: 3%;
   -webkit-animation-delay: -1.3s;
           animation-delay: -1.3s;
 }
 header .stars14 {
   position: absolute;
-  left: 37%;
-  top: 27%;
+  left: 2%;
+  top: -15%;
   -webkit-animation-delay: -1.4s;
           animation-delay: -1.4s;
 }
 header .stars15 {
   position: absolute;
-  left: 83%;
-  top: 42%;
+  left: 8%;
+  top: 44%;
   -webkit-animation-delay: -1.5s;
           animation-delay: -1.5s;
 }
 header .stars16 {
   position: absolute;
   left: 88%;
-  top: 31%;
+  top: 15%;
   -webkit-animation-delay: -1.6s;
           animation-delay: -1.6s;
 }
 header .stars17 {
   position: absolute;
-  left: 9%;
-  top: -24%;
+  left: 94%;
+  top: 13%;
   -webkit-animation-delay: -1.7s;
           animation-delay: -1.7s;
 }
 header .stars18 {
   position: absolute;
-  left: 91%;
-  top: -20%;
+  left: 50%;
+  top: 17%;
   -webkit-animation-delay: -1.8s;
           animation-delay: -1.8s;
 }
 header .stars19 {
   position: absolute;
-  left: 60%;
-  top: 34%;
+  left: 20%;
+  top: 49%;
   -webkit-animation-delay: -1.9s;
           animation-delay: -1.9s;
 }
 header .stars20 {
   position: absolute;
-  left: 7%;
-  top: -26%;
+  left: 23%;
+  top: -23%;
   -webkit-animation-delay: -2s;
           animation-delay: -2s;
 }
 header .stars21 {
   position: absolute;
-  left: 1%;
-  top: 35%;
+  left: 88%;
+  top: 43%;
   -webkit-animation-delay: -2.1s;
           animation-delay: -2.1s;
 }
 header .stars22 {
   position: absolute;
-  left: 75%;
-  top: 45%;
+  left: 64%;
+  top: 20%;
   -webkit-animation-delay: -2.2s;
           animation-delay: -2.2s;
 }
 header .stars23 {
   position: absolute;
-  left: 50%;
-  top: 4%;
+  left: 21%;
+  top: 21%;
   -webkit-animation-delay: -2.3s;
           animation-delay: -2.3s;
 }
 header .stars24 {
   position: absolute;
   left: 46%;
-  top: -16%;
+  top: -8%;
   -webkit-animation-delay: -2.4s;
           animation-delay: -2.4s;
 }
 header .stars25 {
   position: absolute;
-  left: 15%;
-  top: 36%;
+  left: 99%;
+  top: 28%;
   -webkit-animation-delay: -2.5s;
           animation-delay: -2.5s;
 }
 header .stars26 {
   position: absolute;
-  left: 60%;
-  top: 27%;
+  left: 7%;
+  top: 16%;
   -webkit-animation-delay: -2.6s;
           animation-delay: -2.6s;
 }
 header .stars27 {
   position: absolute;
-  left: 96%;
-  top: 38%;
+  left: 35%;
+  top: -29%;
   -webkit-animation-delay: -2.7s;
           animation-delay: -2.7s;
 }
 header .stars28 {
   position: absolute;
-  left: 34%;
-  top: 10%;
+  left: 7%;
+  top: 17%;
   -webkit-animation-delay: -2.8s;
           animation-delay: -2.8s;
 }
 header .stars29 {
   position: absolute;
-  left: 64%;
-  top: -11%;
+  left: 24%;
+  top: -2%;
   -webkit-animation-delay: -2.9s;
           animation-delay: -2.9s;
 }
 header .stars30 {
   position: absolute;
-  left: 94%;
-  top: 41%;
+  left: 36%;
+  top: 24%;
   -webkit-animation-delay: -3s;
           animation-delay: -3s;
 }
 header .stars31 {
   position: absolute;
-  left: 70%;
-  top: 47%;
+  left: 39%;
+  top: 8%;
   -webkit-animation-delay: -3.1s;
           animation-delay: -3.1s;
 }
 header .stars32 {
   position: absolute;
-  left: 99%;
-  top: -29%;
+  left: 77%;
+  top: 35%;
   -webkit-animation-delay: -3.2s;
           animation-delay: -3.2s;
 }
 header .stars33 {
   position: absolute;
-  left: 39%;
-  top: 2%;
+  left: 71%;
+  top: 43%;
   -webkit-animation-delay: -3.3s;
           animation-delay: -3.3s;
 }
 header .stars34 {
   position: absolute;
-  left: 48%;
-  top: -24%;
+  left: 70%;
+  top: -9%;
   -webkit-animation-delay: -3.4s;
           animation-delay: -3.4s;
 }
 header .stars35 {
   position: absolute;
-  left: 70%;
-  top: -17%;
+  left: 17%;
+  top: 27%;
   -webkit-animation-delay: -3.5s;
           animation-delay: -3.5s;
 }
 header .stars36 {
   position: absolute;
-  left: 95%;
-  top: -28%;
+  left: 22%;
+  top: -18%;
   -webkit-animation-delay: -3.6s;
           animation-delay: -3.6s;
 }
 header .stars37 {
   position: absolute;
-  left: 77%;
-  top: -21%;
+  left: 8%;
+  top: 34%;
   -webkit-animation-delay: -3.7s;
           animation-delay: -3.7s;
 }
 header .stars38 {
   position: absolute;
-  left: 21%;
-  top: -12%;
+  left: 53%;
+  top: -19%;
   -webkit-animation-delay: -3.8s;
           animation-delay: -3.8s;
 }
 header .stars39 {
   position: absolute;
-  left: 3%;
-  top: 47%;
+  left: 49%;
+  top: -27%;
   -webkit-animation-delay: -3.9s;
           animation-delay: -3.9s;
 }
 header .stars40 {
   position: absolute;
-  left: 10%;
-  top: 40%;
+  left: 14%;
+  top: -22%;
   -webkit-animation-delay: -4s;
           animation-delay: -4s;
 }
 header .stars41 {
   position: absolute;
-  left: 54%;
-  top: -10%;
+  left: 13%;
+  top: 46%;
   -webkit-animation-delay: -4.1s;
           animation-delay: -4.1s;
 }
 header .stars42 {
   position: absolute;
-  left: 86%;
-  top: 32%;
+  left: 40%;
+  top: 28%;
   -webkit-animation-delay: -4.2s;
           animation-delay: -4.2s;
 }
 header .stars43 {
   position: absolute;
-  left: 23%;
-  top: -16%;
+  left: 93%;
+  top: 43%;
   -webkit-animation-delay: -4.3s;
           animation-delay: -4.3s;
 }
 header .stars44 {
   position: absolute;
-  left: 81%;
-  top: 32%;
+  left: 71%;
+  top: -2%;
   -webkit-animation-delay: -4.4s;
           animation-delay: -4.4s;
 }
 header .stars45 {
   position: absolute;
-  left: 2%;
-  top: 14%;
+  left: 14%;
+  top: 16%;
   -webkit-animation-delay: -4.5s;
           animation-delay: -4.5s;
 }
 header .stars46 {
   position: absolute;
-  left: 55%;
-  top: -30%;
+  left: 56%;
+  top: 15%;
   -webkit-animation-delay: -4.6s;
           animation-delay: -4.6s;
 }
 header .stars47 {
   position: absolute;
-  left: 68%;
-  top: 35%;
+  left: 18%;
+  top: -15%;
   -webkit-animation-delay: -4.7s;
           animation-delay: -4.7s;
 }
 header .stars48 {
   position: absolute;
-  left: 32%;
-  top: 46%;
+  left: 91%;
+  top: 45%;
   -webkit-animation-delay: -4.8s;
           animation-delay: -4.8s;
 }
 header .stars49 {
   position: absolute;
-  left: 27%;
-  top: 43%;
+  left: 83%;
+  top: -9%;
   -webkit-animation-delay: -4.9s;
           animation-delay: -4.9s;
 }
 header .stars50 {
   position: absolute;
-  left: 92%;
-  top: 16%;
+  left: 60%;
+  top: 40%;
   -webkit-animation-delay: -5s;
           animation-delay: -5s;
 }
@@ -597,10 +597,11 @@ section#section_service1 .col-sm-12 {
   padding-bottom: 30px;
 }
 section#section_service1 .col-sm-3 {
-  text-align: left;
+  text-align: center;
   padding-right: 0px;
 }
 section#section_service1 .text {
+  text-align: left;
   padding-left: 0px;
   padding-top: 20px;
 }
@@ -699,8 +700,9 @@ section#section_works .work img {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: auto;
-  width: auto;
+  max-width: 400px;
+  height: 70%;
+  width: 85%;
   z-index: 3;
   opacity: 1;
   transition: 0.5s;
