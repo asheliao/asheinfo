@@ -95,7 +95,7 @@ header
   @for $i from 1 through 50
     .stars#{$i}
       $posX: random(100)*1%
-      $posY: random(80)*-1% + 50%
+      $posY: random(100)*1%
       +abpos($posX, $posY)
       // left: random(100)*1%
       // top: random(150)*1%
@@ -333,9 +333,9 @@ section#section_works
       
   .work img
     +ab_center
-    max-width: 400px
-    height: 70%
-    width: 85%
+    max-width: 600px
+    height: 80%
+    width: 80%
     z-index: 3
     opacity: 1
     transition: 0.5s
