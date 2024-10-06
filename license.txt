@@ -1,7 +1,7 @@
 
 
 <!--
-Copyright (c) 2019 by Ashe Liao (https://codepen.io/toc1001adam/pen/MqLVON)
+Copyright (c) 2019 by Ashe Liao 
 
 
 Fork of an original work by Majer @Monoame Design (https://codepen.io/frank890417/pen/QdGKyK)
